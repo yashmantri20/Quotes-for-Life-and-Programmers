@@ -25,7 +25,7 @@ class Quotesforprogrammer
 
     async fetchQuotes()
     {
-        const res = await fetch('http://quotes.stormconsultancy.co.uk/quotes.json')
+        const res = await fetch('https://programming-quotes-api.herokuapp.com/quotes/lang/en')
         const quotes = await res.json()
         this.displayPost(quotes)
     }
@@ -33,11 +33,11 @@ class Quotesforprogrammer
     displayPost(quotes)
     {
         const post = document.querySelector('.post')
-        post.innerHTML = `<p>${quotes[this.i].quote}</p>`
+        post.innerHTML = `<p>${quotes[this.i].en}</p>`
     }
 
     async shareOntwitter(){
-        const res = await fetch('http://quotes.stormconsultancy.co.uk/quotes.json')
+        const res = await fetch('https://programming-quotes-api.herokuapp.com/quotes/lang/en')
         const quotes = await res.json()
         var url = `https://twitter.com/intent/tweet?text=${quotes[this.i].text}`
         window.open(url)
