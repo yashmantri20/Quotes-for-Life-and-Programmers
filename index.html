@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="assets/css/app.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="https://www.riverbendhomestead.com.au/wp-content/uploads/2016/06/cropped-riverbend-homestead-favicon.png">
+        <title>
+            Home
+        </title>
+    </head>
+    
+    <body class="home">
+        <div>
+            <div class="topnav">
+                <i style="font-size:25px;color:black;font-size: 40px;padding-left: 15px;padding-top: 7px;" class="fa fa-quote-left"></i>
+                <a href="./store.html"><b>Store</b></a>
+                <a href="./quotesforprogrammer.html"><b>QuotesforProgrammer</b></a>
+                <a href="./quotes.html"><b>QuotesforLife</b></a>
+                <a class="active" href="./index.html"><b>Home</b></a>
+            </div>
+
+            <div class="info">
+                <h2><i style="font-size:90px;color:black;" class="fa fa-quote-right"></i></h2>
+                <h2><b>Quotes for Life and Programmers</b></h2>
+                <a href="./quotes.html"><h2><b>Quotes</b></h2></a></br></br>
+                <h3>"First solve the problem<br/>
+                then write the code"</h3>
+            </br><div id="div1" class="fa"></div>
+            </div>
+        </div> 
+
+        <div class="footer">
+            <p>Made by <a href="https://t.me/yashmantri"><b>Yash Mantri</b></a></p>
+            <a href="https://github.com/yashmantri20"><i style="font-size:29px;" class="fa fa-github"></i></a>&nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/yashmantri20/"><i style="font-size:29px;" class="fa fa-linkedin"></i></a>
+        </div>
+</body>
+
+<script>
+    function smile() {
+      var a;
+      a = document.getElementById("div1");
+      a.innerHTML = "&#xf25a;";
+      setTimeout(function () {
+          a.innerHTML = "&#xf256;";
+        }, 1000);
+      setTimeout(function () {
+          a.innerHTML = "&#xf259;";
+        }, 2000);
+      setTimeout(function () {
+          a.innerHTML = "&#xf256;";
+        }, 3000);
+    }
+    smile();
+    setInterval(smile, 4000);
+</script>    
+</html>

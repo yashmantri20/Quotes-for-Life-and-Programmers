@@ -1,0 +1,96 @@
+
+.btn{
+  width: 180px;
+  margin: auto;
+  border-radius: 15px;
+}
+/* Nav Bar */
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: right;
+  color: lightslategray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: lightgray;
+  color: white;
+}
+
+.topnav a.active {
+  color: black;
+}
+
+/* Home page */
+
+.home{
+  /* background: url(./coffee-apple.jpg) no-repeat fixed; */
+  background-color: lightgray;
+  font-family: Arial;
+  /* height: 100%; */
+}
+
+.info{
+  color: black;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.info b,h3{
+  font-weight:600;
+}
+
+.info h3 {
+  animation: color-change 2s infinite;
+}
+
+@keyframes color-change {
+  0% { color: steelblue; }
+  50% { color: black; }
+  100% { color: steelblue; }
+}
+
+.footer{
+  text-align: center;
+  color: black;
+  margin-top: 120px;
+}
+
+.footer p{
+  font-weight:600
+}
+
+#div1 {
+  font-size:48px;
+  font-weight:600;
+}
+
+#div1:hover{
+  color: steelblue;
+}
+
+@media all and (max-width: 500px) {
+  .btn{
+    width: auto;
+    border-radius: 15px;
+  }
+  .git{
+    height: 100vh;
+  }
+  .home{
+    height: 100%;
+  }
+}
+
+/* Quotes */
+
+.bt{
+  
+}

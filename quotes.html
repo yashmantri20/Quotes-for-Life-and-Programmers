@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="assets/css/app.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="https://pluspng.com/img-png/quotation-png-quotation-png-hd-1000.png">
+        <title>
+            QuotesforLife
+        </title>
+    </head>
+    
+    <body class="home">
+        <div>
+            <div class="topnav">
+                <i style="font-size:25px;color:black;font-size: 40px;padding-left: 15px;padding-top: 7px;" class="fa fa-quote-left"></i>
+                <a href="./store.html"><b>Store</b></a>
+                <a href="./quotesforprogrammer.html"><b>QuotesforProgrammer</b></a>
+                <a href="./quotes.html" class="active"><b>QuotesforLife</b></a>
+                <a href="./index.html"><b>Home</b></a>
+            </div>
+
+            <div class="info">
+                <h2><i style="font-size:90px;color:black;" class="fa fa-quote-right"></i></h2>
+                <h2><b>QuotesforLife </b></h2><br>
+                <!-- <a href="./quotes.html"><h2><b>Quotes</b></h2></a></br> -->
+                <h3 class="post"></h3><br>
+                <div id="div1" class="fa"></div></br></br>
+
+            </br>
+            </div>
+        </div> 
+    <div class="bt">
+        <center><button class="btn btn-primary" id="myid1" type="submit">
+            Back
+        </button>&nbsp;&nbsp;
+        <button class="btn btn-primary" id="myid" type="submit">
+            Next
+        </button><br><br>
+        <button class="btn btn-primary" id="share" type="submit">
+            Share
+        </button>
+        </center>
+    </div>
+</body>
+
+<script>
+    function smile() {
+      var a;
+      a = document.getElementById("div1");
+      a.innerHTML = "&#xf25a;";
+      setTimeout(function () {
+          a.innerHTML = "&#xf256;";
+        }, 1000);
+      setTimeout(function () {
+          a.innerHTML = "&#xf259;";
+        }, 2000);
+      setTimeout(function () {
+          a.innerHTML = "&#xf256;";
+        }, 3000);
+    }
+    smile();
+    setInterval(smile, 4000);
+</script>  
+<script src="assets/js/script.js"></script>
+</html>
